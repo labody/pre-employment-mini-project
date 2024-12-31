@@ -2,7 +2,7 @@ import { Sequelize, DataTypes } from 'sequelize';
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: ':memory:',
+    storage: './database.sqlite',
 });
 
 const Task = sequelize.define('Task', {
