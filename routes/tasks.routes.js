@@ -13,6 +13,7 @@ const taskSchema = Joi.object({
 // Fetch a list of tasks
 router.get('/', async (req, res) => {
   const tasks = await Task.findAll();
+  res.send("You're live")
   res.json(tasks);
 });
 
