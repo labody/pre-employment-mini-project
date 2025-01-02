@@ -15,6 +15,9 @@ app.use(express.json());
 
 app.use('/tasks', router);
 
+app.get('/', (req, res) => {
+  res.send('Task API is running. Available endpoints: /tasks');
+});
 
   
   // Initialize database and start server
